@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao HTML5 para Iniciantes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .post-meta {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 20px;
-        }
-        .post-content {
-            margin-top: 20px;
-        }
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
-    </style>
+    <title>Meu Artigo de Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.7.7/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.7/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>{título}</h1>
-    </header>
-    <main>
-        <div class="post-meta">
-            Por <span class="author">Ale Silva</span> em <time>Wed May 15 2024 00:00:00 GMT-0300 (Horário Padrão de Brasília)</time>
-        </div>
-        <div class="post-content">
-            O HTML5 trouxe muitas novidades empolgantes para o desenvolvimento web. Neste post, vamos explorar as principais tags e recursos que todo iniciante deve conhecer:\n\n1. `<header>` e `<footer>`\n2. `<nav>` para menus de navegação\n3. `<article>` e `<section>` para estruturar conteúdo\n4. `<video>` e `<audio>` para mídia nativa\n5. `<canvas>` para gráficos e animações\n\nCom esses elementos, você já pode começar a criar páginas web mais semânticas e modernas!
-        </div>
+    <!-- Barra de navegação -->
+    <nav class="top">
+        <a href="#" class="brand">
+            <img src="https://www.beercss.com/favicon.png" class="circle left" alt="Logo">
+            <h6>Meu Blog</h6>
+        </a>
+        <a href="#" class="right">Início</a>
+        <a href="#" class="right">Sobre</a>
+        <a href="#" class="right">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="responsive">
+        <article class="large-padding">
+            <!-- Cabeçalho do artigo -->
+            <header>
+                <h1 class="large">Introdução ao HTML5 para Iniciantes</h1>
+                <p class="opacity">Publicado em Wed May 15 2024 00:00:00 GMT-0300 (Horário Padrão de Brasília) por {Autor}</p>
+            </header>
+
+            <!-- Imagem de capa -->
+            <img src="https://www.beercss.com/beer-and-woman.svg" class="responsive round medium-margin" alt="Imagem de capa">
+
+            <!-- Conteúdo do artigo -->
+            <div class="large-text">
+                O HTML5 trouxe muitas novidades empolgantes para o desenvolvimento web. Neste post, vamos explorar as principais tags e recursos que todo iniciante deve conhecer:\n\n1. `<header>` e `<footer>`\n2. `<nav>` para menus de navegação\n3. `<article>` e `<section>` para estruturar conteúdo\n4. `<video>` e `<audio>` para mídia nativa\n5. `<canvas>` para gráficos e animações\n\nCom esses elementos, você já pode começar a criar páginas web mais semânticas e modernas!
+                
+                <h2 class="large">Subtítulo 1</h2>
+                <p>Aqui você pode desenvolver a primeira parte do seu artigo. Beer CSS facilita a criação de layouts responsivos e atraentes.</p>
+                
+                <h2 class="large">Subtítulo 2</h2>
+                <p>Continue seu artigo aqui. Você pode adicionar mais parágrafos, imagens, listas e outros elementos conforme necessário.</p>
+
+                <!-- Exemplo de lista -->
+                <h3>Alguns pontos importantes:</h3>
+                <ul>
+                    <li>Primeiro item da lista</li>
+                    <li>Segundo item da lista</li>
+                    <li>Terceiro item da lista</li>
+                </ul>
+
+                <!-- Exemplo de citação -->
+                <blockquote class="border large-padding">
+                    Esta é uma citação importante que você quer destacar no seu artigo.
+                </blockquote>
+
+                <p>Conclua seu artigo com um parágrafo final, resumindo os pontos principais ou chamando o leitor para uma ação.</p>
+            </div>
+
+            <!-- Seção de comentários -->
+            <section class="large-margin-top">
+                <h3>Comentários</h3>
+                <!-- Aqui você pode adicionar um sistema de comentários -->
+            </section>
+        </article>
     </main>
-    <footer>
+
+    <!-- Rodapé -->
+    <footer class="center-align large-padding">
         <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
     </footer>
 </body>
